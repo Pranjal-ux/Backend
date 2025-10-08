@@ -1,5 +1,5 @@
-// const { log } = require('console');
-const fs = require('fs');
+// // const { log } = require('console');
+// const fs = require('fs');
 // fs.writeFile("js.txt", "this is the js ", function (err) {
 //     if (err) console.log(err);
 //     else console.log("done")
@@ -24,7 +24,37 @@ const fs = require('fs');
 //     if (err) console.log(err);
 //     else console.log("done")
 // })
-fs.rmdir("./copy", { recursive: true }, function (err) {
-    if (err) console.log(err);
-    else console.log("remove")
+// fs.rmdir("./copy", { recursive: true }, function (err) {
+//     if (err) console.log(err);
+//     else console.log("remove")
+// })
+
+// fs.mkdir("./myFolder",function(err){
+//     if(err) console.log(err);
+//     else console.log("Created");
+// })
+// const directory = "./new-directory"
+// fs.mkdir("./newDirectory", function (err) {
+//     if (err) {
+//         console.log("Error creating directory:", err);
+//     } else {
+//         console.log("Done");  // You need to call console.log (or some function)
+//     }
+// });
+// fs.readFile("new.txt", function (err) {
+//     if (err) {
+//         console.log("error caught", err)
+//     }
+//     else {
+//         console.log("done");
+//         console.log(DataTransfer.toString());
+//     }
+// })
+
+//HTTP
+
+const http = require('http');
+const server = http.createServer(function (req, res) {
+    res.end("hello world");
 })
+server.listen(3000);

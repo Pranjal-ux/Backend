@@ -1,1 +1,1 @@
-const fs = require('fs');
+const directory = "./new-directory"

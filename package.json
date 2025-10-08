@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "Atom.js",
   "scripts": {
+    "start": "node ./Ecma.js",
+    "dev": "echo \"i am dev\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,10 @@
     "url": "https://github.com/Pranjal-ux/Backend/issues"
   },
   "homepage": "https://github.com/Pranjal-ux/Backend#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "accessibility": "^3.0.9",
+    "express": "^5.1.0",
+    "one-liner-joke": "^1.2.2"
+  }
 }
