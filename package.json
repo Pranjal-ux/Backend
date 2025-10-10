@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "Atom.js",
+  "main": "Alpha.js",
   "scripts": {
     "start": "node ./Ecma.js",
     "dev": "echo \"i am dev\"",
@@ -21,6 +21,7 @@
   "dependencies": {
     "accessibility": "^3.0.9",
     "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
     "one-liner-joke": "^1.2.2"
   },
