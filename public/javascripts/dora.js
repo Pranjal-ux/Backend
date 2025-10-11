@@ -1,1 +1,1 @@
-alert("abbo aagaye hai")
+// alert("abbo aagaye hai")
