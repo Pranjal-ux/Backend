@@ -12,6 +12,14 @@ app.get("/", function (req, res) {
     })
    
 })
+fs.rmdir('./newDirectory',{recursive:true},function(err){
+    if(err){
+        console.log(err);
+    }
+    else{
+        console.log("Deletion done ")
+    }
+})
 app.post("/create", function (req, res) {
 fs.writeFile(`./files/${req.body.title.split(' ').join('')}.txt`,req.body.details,function(err){
 res.redirect("/")
