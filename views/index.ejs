@@ -31,12 +31,10 @@
           />
         </form>
       </div>
-      <div class="task flex justify-between wrap">
+      <div class="task flex justify-evenly wrap">
         <% if (files.length>0){ %> <% files.forEach(function(val){ %>
         <div class="task w-72 bg-zinc-800 rounded-lg">
-          <h1 class="text-white text-2xl tracking-tighter">
-            Some task goes here.
-          </h1>
+          <h1 class="text-white text-2xl tracking-tighter"><%= val %></h1>
           <a class="link text-blue-500 inline-block" href="#">Read more</a>
         </div>
         <% }) %> <% } else { %>

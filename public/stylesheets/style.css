@@ -19,6 +19,10 @@ html,body{
 }
 .button{
     margin-top: 10px;
+    
+}
+.button:hover{
+    cursor: pointer;
 }
 .task{
     padding: 30px;
