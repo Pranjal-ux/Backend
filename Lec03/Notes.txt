@@ -1,1 +1,4 @@
  //Built a mini notes applciation
+
+ req.params = > aisa wo route jiske aage colon ho
+ 
