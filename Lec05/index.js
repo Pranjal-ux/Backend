@@ -12,6 +12,9 @@ app.get("/", function (req, res) {
         res.render("index", { files: files })
     })
 })
+ fs.readdir(`./files`, function (err, files) {
+    
+    })
 app.post("/create", function (req, res) {
     fs.writeFile(`./files/${req.body.title.split(' ').join('')}.txt`, req.body.data, function (err) {
         res.redirect("/")
