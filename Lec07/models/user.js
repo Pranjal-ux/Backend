@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
-mongoose.connect("mongodb://127.0.0.1:3000/textapp")
+mongoose.connect("mongodb://127.0.0.1:27017/textapp")
 const userSchema = mongoose.Schema({
     name: String,
     image: String,
     email: String
 })
-mongoose.model('user','userSchema')
+module.exports = mongoose.model('user', userSchema)

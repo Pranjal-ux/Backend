@@ -9,12 +9,22 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get("/", (req, res) => {
     res.render("index")
 })
-app.get("/read", (req, res) => {
-    res.render("read")
+app.get("/read", async (req, res) => {
+    let users = await userModel.find()
+    res.render("read", { users })
 })
-app.post("/create", (req, res) => {
-userModel.create({
-    
+//delete route
+app.get("/delete/:id", async (req, res) => {
+    let deleteUser = await userModel.findOneAndDelete({ _id: req.params.id })
+    res.redirect("/read")
 })
+app.post("/create", async (req, res) => {
+    let { name, image, email } = req.body
+    let Createuser = await userModel.create({
+        name,
+        email,
+        image
+    })
+    res.redirect("/read")
 })
 app.listen(3000)
